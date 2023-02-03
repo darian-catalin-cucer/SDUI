@@ -1,0 +1,22 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+rootProject.name = "DynamicListCompose"
+include ':app'
+include ':navigation'
+include ':navigation:api'
+include ':navigation:impl'
+include ':navigation:wiring'
+include ':app:benchmark'
+include ':render-processor'
